@@ -1,33 +1,145 @@
-.App {
-  text-align: center;
+* {
+  box-sizing: border-box;
+  margin: 0px;
+  padding: 0px;
 }
 
-.App-logo {
-  animation: App-logo-spin infinite 20s linear;
-  height: 40vmin;
-  pointer-events: none;
+.main-header {
+  height: 90vh;
+  width: 100%;
+  background-image: url("https://blackrockdigital.github.io/startbootstrap-agency/img/header-bg.jpg");
+  background-size: cover;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+.nav-bar {
+  height: 13vh;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  color: #fff;
+  padding: 0px 50px;
+  font-weight: 600;
+}
+
+.title {
+  color: #FECA30;
+  font-family: 'Kaushan Script', cursive;
+  font-size: 30px;
+  font-weight: 700;
+}
+
+.links-container {
+  width: 450px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.center-text {
+  width: 100%;
+  height: 63vh;
   display: flex;
   flex-direction: column;
   align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
+  justify-content: space-between;
+  padding: 120px 0px;
+  color: #fff;
+}
+
+.center-text h3 {
+  font-size: 42px;
+  font-family: 'Neuton', serif;
+  font-style: italic;
+}
+
+.center-text h1 {
+  font-size: 72px;
+  margin-bottom: 25px;
+}
+
+.center-text button {
+  height: 70px;
+  width: 200px;
+  border-radius: 5px;
+  background: #FECA30;
+  border-style: none;
+  color: #fff;
+  font-size: 18px;
+  font-weight: 900;
+}
+
+.ham-menu {
+  display: none;
+}
+
+.menu {
+  width: 100%;
+  height: 240px;
+  background: #1E2124;
+  position: absolute;
+  top: -300px;
+  transition: .70s;
   color: white;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  padding-left: 20px;
+  font-weight: 600;
 }
 
-.App-link {
-  color: #61dafb;
+.slide {
+  top: 7vh;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
+@media(max-width: 991px) {
+  .center-text {
+    padding: 120px 280px;
+    text-align: center;
   }
-  to {
-    transform: rotate(360deg);
+  .title {
+    font-size: 20px;
   }
+  .links-container {
+    display: none;
+  }
+  .nav-bar {
+    background: #1E2124;
+    height: 9vh;
+    z-index: 1;
+  }
+  .ham-menu {
+    display: block;
+    height: 40px;
+    width: 76px;
+    background: #FECA30;
+    border-radius: 4px;
+    font-size: 13px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
+}
+
+@media(max-width: 375px) {
+  .nav-bar {
+    height: 7vh;
+    padding: 0px 20px;
+  }
+  .center-text h3 {
+    font-size: 26px;
+  }
+  .main-header {
+    height: 67vh;
+    background-position: center; 
+  }
+  .center-text h1 {
+    font-size: 54px;
+    margin-bottom: 15px;
+  }
+  .center-text {
+    margin: 0px;
+    padding: 123px 0px;
+  }
+
 }
