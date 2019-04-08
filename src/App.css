@@ -188,4 +188,24 @@
     padding: 123px 0px;
   }
 
+  .top-body {
+    display: block;
+    padding: 0px; 
+    margin: 20px 35px;   
+  }
+
+  .top-body h1 {
+    margin-left: 40px;
+  }
+
+  .layout {
+    display: block;
+    margin: 20px 0px;
+    padding: 20px 0px;    
+  }
+
+  .layout p {
+    margin-bottom: 30px;
+  }
+
 }
