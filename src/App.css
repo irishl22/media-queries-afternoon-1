@@ -101,6 +101,7 @@
 
 .top-body h1 {
   font-size: 46px;
+  margin-bottom: 20px;
 }
 
 .top-body p {
@@ -108,6 +109,8 @@
   font-family: 'Neuton', serif; 
   font-size: 20px;
   font-weight: 500;
+  margin-bottom: 20px;
+
 }
 
 .layout {
