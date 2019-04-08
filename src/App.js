@@ -38,9 +38,29 @@ class App extends Component {
             <h1>IT'S NICE TO MEET YOU</h1>
             <button>TELL ME MORE</button>
           </div>
-         
         </header>
+        <div className="top-body">
+          <h1>SERVICES</h1>
+          <p>Lorem ipsum dolor sit amet consectetur.</p>
+          <div className="layout">
+            <div className="col">
+              <div className="circle"></div>
+              <h5>E-Commerce</h5>
+              <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Minima maxime quam architecto quo inventore harum ex magni, dicta impedit.</p>
+            </div>
+            <div className="col">
+              <div className="circle"></div>
+              <h5>Responsive Design</h5>
+              <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Minima maxime quam architecto quo inventore harum ex magni, dicta impedit.</p>
+            </div>
+            <div className="col">
+              <div className="circle"></div>
+              <h5>Web Security</h5>
+              <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Minima maxime quam architecto quo inventore harum ex magni, dicta impedit.</p>
+            </div>
+          </div>
       </div>
+    </div>
     );
   }
 }
